@@ -1,11 +1,17 @@
 import React from 'react';
 import './Dashboard.css';
+import Navbar from '../common/Navbar';
+import Footer from '../common/Footer';
 
 function Dashboard() {
   return (
+    <>
+      <Navbar />
     <div className="dashboard-container">
-      <h2>Welcome to the LuxDrive Admin Panel</h2>
+      
     </div>
+      {/* <Footer /> */}
+    </>
   );
 }
 export default Dashboard;

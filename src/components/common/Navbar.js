@@ -1,9 +1,18 @@
 import React from 'react';
 import './Navbar.css';
+import { useState } from 'react';
+import Signup from '../login/Signup';
 // import logo from '../../assets/logo.png'; // Uncomment if logo is available
 
 function Navbar() {
+
+   const [showSignup, setShowSignup] = useState(false);
+
+  const handleOpenSignup = () => setShowSignup(true);
+  const handleCloseSignup = () => setShowSignup(false);
+
   return (
+    <>
     <nav className="navbar navbar-expand-lg custom-navbar">
       <a className="navbar-brand mx-2 text-white" href="/">Luxdrive-360</a>
 
@@ -36,10 +45,30 @@ function Navbar() {
         </ul>
         <form className="d-flex">
           <button type="button" className="btn btn-outline-light me-2">Login</button>
-          <button type="button" className="btn btn-outline-light">Sign Up</button>
+          <button type="button" className="btn btn-outline-light"   onClick={handleOpenSignup}>Sign Up</button>
         </form>
       </div>
     </nav>
+
+
+      {showSignup && (
+        <div className="modal-backdrop-custom">
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content p-3">
+              <div>
+                {/* <h5 className="modal-title">Sign Up</h5> */}
+                {/* <button className="btn-close" onClick={handleCloseSignup}>Close</button> */}
+                
+              </div>
+              <div className="modal-body">
+               <Signup closeModal={handleCloseSignup} />
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+     </>
   );
 }
 
