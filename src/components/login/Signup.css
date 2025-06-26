@@ -1,0 +1,15 @@
+.signup-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #243a51;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.signup-container h3 {
+  font-weight: 600;
+}
+
+form.bg-white {
+  background-color: #fff;
+}

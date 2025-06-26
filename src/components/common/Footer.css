@@ -1,0 +1,74 @@
+.luxdrive-footer {
+  background-color: #102c45; /* Match navbar */
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bfff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #2e4a64;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.luxdrive-footer {
+  margin-top: 100px; /* Pushes footer downward */
+  background-color: #243a51; 
+  color: #ffffff;
+  padding: 40px 20px 20px;
+}
